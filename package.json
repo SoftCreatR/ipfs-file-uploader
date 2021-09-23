@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Website for uploading files into IPFS",
   "scripts": {
-    "clean": "rimraf ./dist/*",
+    "clean": "rimraf './dist/*'",
     "dev": "parcel src/index.html",
-    "build": "rimraf ./dist/* && parcel build src/index.html src/error.html --public-url '/'",
+    "build": "rimraf './dist/*' && parcel build src/index.html src/error.html --public-url '/'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "rimraf ./dist/* && parcel build src/index.html src/error.html --public-url '/' && ipfs add -r --quieter dist"
+    "deploy": "rimraf './dist/*' && parcel build src/index.html src/error.html --public-url '/' && ipfs add -r --quieter dist"
   },
   "author": "Sascha Greuel <hello@1-2.dev>",
   "license": "ISC",
