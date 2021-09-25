@@ -23,9 +23,9 @@ const urlParams = new URLSearchParams(window.location.search)
 
 const IPFSConfig = {
     useLocal: () => urlParams.get("local") === "1",
-    host: () => IPFSConfig.useLocal() ? "127.0.0.1" : (location.hostname === "ipfs.1-2.dev" ? location.hostname : "ipfs.dweb.link"),
+    host: () => IPFSConfig.useLocal() ? "127.0.0.1" : (location.hostname === "ipfs.1-2.dev" ? location.hostname : "ipfs.infura.io"),
     port: () => IPFSConfig.useLocal() && urlParams.get("port") ? parseInt(urlParams.get("port")) : 5001,
-    dlUrl: () => (location.hostname === "ipfs.1-2.dev" ? "ipfs.ipfs.1-2.dev" : "ipfs.dweb.link")
+    dlUrl: () => (location.hostname === "ipfs.1-2.dev" ? "ipfs.ipfs.1-2.dev" : "ipfs.infura-ipfs.io")
 }
 
 let progressSizes = {}
