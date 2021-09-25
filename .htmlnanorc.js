@@ -1,5 +1,5 @@
 module.exports = {
-	removeComments: (comments) => {
-		return !comments.startsWith("<!--#");
-	},
-};
+    removeComments: (comments) => {
+        return !comments.startsWith("<!--#")
+    },
+}

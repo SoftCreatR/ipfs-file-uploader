@@ -23,8 +23,9 @@ const urlParams = new URLSearchParams(window.location.search)
 
 const IPFSConfig = {
     useLocal: () => urlParams.get("local") === "1",
-    host: () => IPFSConfig.useLocal() ? "127.0.0.1" : (location.hostname === "ipfs.1-2.dev" ? location.hostname : "ipfs.infura.io"),
-    port: () => IPFSConfig.useLocal() && urlParams.get("port") ? parseInt(urlParams.get("port")) : 5001
+    host: () => IPFSConfig.useLocal() ? "127.0.0.1" : (location.hostname === "ipfs.1-2.dev" ? location.hostname : "ipfs.dweb.link"),
+    port: () => IPFSConfig.useLocal() && urlParams.get("port") ? parseInt(urlParams.get("port")) : 5001,
+    dlUrl: () => (location.hostname === "ipfs.1-2.dev" ? "ipfs.ipfs.1-2.dev" : "ipfs.dweb.link")
 }
 
 let progressSizes = {}
@@ -204,7 +205,7 @@ initIPFSInstance().then(ipfs => {
                         }
 
                         for (const file of files) {
-                            const downloadURL = !IPFSConfig.useLocal() ? `https://${IPFSConfig.host()}/ipfs/${pathCID}/${file.name}` : `ipfs://${pathCID}/${file.name}`
+                            const downloadURL = !IPFSConfig.useLocal() ? `https://${file.cid}.${IPFSConfig.dlUrl()}?filename=${file.name}` : `ipfs://${pathCID}/${file.name}`
 
                             DOM.downloadLinks().querySelector("h3:first-child").insertAdjacentHTML("afterend",
                                 `<dl class="fileInfo ba bg-near-white border-gray-muted lh-title pa3">` +
