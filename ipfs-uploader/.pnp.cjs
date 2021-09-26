@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/packager-raw-url", "npm:2.0.0-nightly.2467"],
             ["@parcel/transformer-jsonld", "npm:2.0.0-nightly.2467"],
             ["@parcel/transformer-sass", "npm:2.0.0-nightly.845"],
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.5"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6"],
             ["ipfs-css", "npm:1.3.0"],
             ["ipfs-http-client", "npm:53.0.0"],
             ["parcel", "npm:2.0.0-nightly.843"],
@@ -2047,22 +2047,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["autoprefixer", [
-        ["npm:10.3.5", {
-          "packageLocation": "./.yarn/cache/autoprefixer-npm-10.3.5-240a6ed50e-0626aece9a.zip/node_modules/autoprefixer/",
+        ["npm:10.3.6", {
+          "packageLocation": "./.yarn/cache/autoprefixer-npm-10.3.6-f1be6ebd86-432fdba79e.zip/node_modules/autoprefixer/",
           "packageDependencies": [
-            ["autoprefixer", "npm:10.3.5"]
+            ["autoprefixer", "npm:10.3.6"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.5", {
-          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-131524333d/0/cache/autoprefixer-npm-10.3.5-240a6ed50e-0626aece9a.zip/node_modules/autoprefixer/",
+        ["virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6", {
+          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-e7a0ed3697/0/cache/autoprefixer-npm-10.3.6-f1be6ebd86-432fdba79e.zip/node_modules/autoprefixer/",
           "packageDependencies": [
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.5"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6"],
             ["@types/postcss", null],
             ["browserslist", "npm:4.17.1"],
             ["caniuse-lite", "npm:1.0.30001260"],
             ["fraction.js", "npm:4.1.1"],
-            ["nanocolors", "npm:0.1.12"],
+            ["nanocolors", "npm:0.2.9"],
             ["normalize-range", "npm:0.1.2"],
             ["postcss", "npm:8.3.8"],
             ["postcss-value-parser", "npm:4.1.0"]
@@ -4912,7 +4912,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/packager-raw-url", "npm:2.0.0-nightly.2467"],
             ["@parcel/transformer-jsonld", "npm:2.0.0-nightly.2467"],
             ["@parcel/transformer-sass", "npm:2.0.0-nightly.845"],
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.5"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6"],
             ["ipfs-css", "npm:1.3.0"],
             ["ipfs-http-client", "npm:53.0.0"],
             ["parcel", "npm:2.0.0-nightly.843"],
@@ -6307,6 +6307,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/nanocolors-npm-0.2.6-a3470f2031-b5a3a7dfec.zip/node_modules/nanocolors/",
           "packageDependencies": [
             ["nanocolors", "npm:0.2.6"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.2.9", {
+          "packageLocation": "./.yarn/cache/nanocolors-npm-0.2.9-bc70228ba1-f68054fe30.zip/node_modules/nanocolors/",
+          "packageDependencies": [
+            ["nanocolors", "npm:0.2.9"]
           ],
           "linkType": "HARD",
         }]

@@ -35,7 +35,7 @@
     "@parcel/packager-raw-url": "nightly",
     "@parcel/transformer-jsonld": "nightly",
     "@parcel/transformer-sass": "nightly",
-    "autoprefixer": "^10.3.5",
+    "autoprefixer": "^10.3.6",
     "parcel": "nightly",
     "postcss": "^8.3.8",
     "rimraf": "^3.0.2"
