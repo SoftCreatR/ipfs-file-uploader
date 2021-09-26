@@ -24,7 +24,13 @@
 git clone https://github.com/SoftCreatR/ipfs-file-uploader
 ```
 
-2. Install dependencies:
+2. cd into project directory
+
+```bash
+cd ipfs-uploader
+```
+
+3. Install dependencies:
 
 ```bash
 yarn install
