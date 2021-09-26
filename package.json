@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf './dist/*'",
     "dev": "parcel src/index.html",
-    "build": "yarn clean && parcel build src/index.html src/error.html --public-url '/'",
+    "build": "yarn clean && parcel build src/index.html src/error.html --public-url '/' --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "yarn build && ipfs add -r --quieter dist"
   },
@@ -30,13 +30,14 @@
     "ipfs-http-client": "^53.0.0",
     "tachyons": "^4.12.0"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "@parcel/packager-raw-url": "2.0.0-nightly.2467",
-    "@parcel/transformer-jsonld": "2.0.0-nightly.2467",
-    "parcel": "2.0.0-nightly.843",
+    "@parcel/packager-raw-url": "nightly",
+    "@parcel/transformer-jsonld": "nightly",
+    "@parcel/transformer-sass": "nightly",
+    "autoprefixer": "^10.3.5",
+    "parcel": "nightly",
+    "postcss": "^8.3.8",
     "rimraf": "^3.0.2"
   }
 }

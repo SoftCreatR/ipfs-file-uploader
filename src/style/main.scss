@@ -1,0 +1,58 @@
+// external
+@import 'npm:tachyons/css/tachyons.css';
+@import 'npm:ipfs-css/ipfs.css';
+
+// internal
+@import 'tooltips';
+@import 'progress';
+@import 'spinner';
+
+dl.fileInfo {
+    word-break: break-all;
+}
+
+.error {
+  margin-top: 20px;
+  position: relative;
+  padding: 20px 20px 20px 60px !important;
+  border-radius: 4px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  width: fit-content;
+
+  &::before {
+    font-size: 32px;
+    width: 58px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "⚠";
+  }
+}
+
+.header-logo {
+    height: 50px
+}
+
+#outputs {
+  opacity: 0;
+}
+
+.f5 svg.icon {
+    height: 16px;
+    width: auto;
+}
+
+.f6 svg.icon {
+    height: 12px;
+    width: auto;
+}
+
+.f7 svg.icon {
+    height: 10px;
+    width: auto;
+}
