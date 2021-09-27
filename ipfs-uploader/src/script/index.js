@@ -36,7 +36,7 @@ const initIPFSInstance = async () => {
         host: IPFSConfig.host(),
         port: IPFSConfig.port(),
         protocol: IPFSConfig.useLocal() ? "http" : "https"
-    });
+    })
 }
 
 const readAsArrayBuffer = async (blob) => {
@@ -49,7 +49,7 @@ const readAsArrayBuffer = async (blob) => {
 }
 
 const addAll = async (ipfs, filesToUpload) => {
-    const results = [];
+    const results = []
 
     for await (const result of ipfs.addAll(filesToUpload, {
         wrapWithDirectory: true,
@@ -145,7 +145,20 @@ initIPFSInstance().then(ipfs => {
         if (!isError) {
             DOM.upload().removeAttribute("hidden")
 
-            // handle file selection and upload
+            // handle file selection, pasting and upload
+            window.addEventListener("paste", (event) => {
+                DOM.upload().files = event.clipboardData.files
+
+                if ("createEvent" in document) {
+                    var evt = document.createEvent("HTMLEvents")
+                    evt.initEvent("change", false, true)
+                    DOM.upload().dispatchEvent(evt)
+                }
+                else {
+                    DOM.upload().fireEvent("onchange")
+                }
+            })
+
             DOM.upload().addEventListener("change", async (event) => {
                 progressSizes = {}
                 cumulativeFilesize = 0
@@ -228,6 +241,8 @@ initIPFSInstance().then(ipfs => {
                         setUploadStatus(null, false, true)
                     })
                 }
+
+                DOM.upload().value = ''
             })
         } else {
             DOM.upload().remove()
