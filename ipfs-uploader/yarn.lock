@@ -4070,29 +4070,29 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ipfs-core-types@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "ipfs-core-types@npm:0.8.0"
+"ipfs-core-types@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "ipfs-core-types@npm:0.8.1"
   dependencies:
     interface-datastore: ^6.0.2
     multiaddr: ^10.0.0
     multiformats: ^9.4.1
-  checksum: 10f67fa1adaed5b7cfd7757a72db0b8ee1d5e04a992fa739b12893842291cab10e1289b77d5884fb6ff5f31255db342c8c2276ee6672c2a14939cbed58219707
+  checksum: 7e18ad6dc0841d5abf73dd80902fdb5ea37e245a8d5b11105ce9665026012f0f463215c2c1b41bf048d9079642f4d665427c80a6f20db6b6d86bb7b42e8ef6b0
   languageName: node
   linkType: hard
 
-"ipfs-core-utils@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "ipfs-core-utils@npm:0.11.0"
+"ipfs-core-utils@npm:^0.11.1":
+  version: 0.11.1
+  resolution: "ipfs-core-utils@npm:0.11.1"
   dependencies:
     any-signal: ^2.1.2
     blob-to-it: ^1.0.1
     browser-readablestream-to-it: ^1.0.1
     debug: ^4.1.1
     err-code: ^3.0.1
-    ipfs-core-types: ^0.8.0
+    ipfs-core-types: ^0.8.1
     ipfs-unixfs: ^6.0.3
-    ipfs-utils: ^9.0.1
+    ipfs-utils: ^9.0.2
     it-all: ^1.0.4
     it-map: ^1.0.4
     it-peekable: ^1.0.2
@@ -4105,7 +4105,7 @@ fsevents@~2.3.2:
     parse-duration: ^1.0.0
     timeout-abort-controller: ^1.1.1
     uint8arrays: ^3.0.0
-  checksum: 71ac6b9f18b5ec0b718a5ed02d14ab306b1e906cc9036695da924c3b3179c7bf2d7570934e433a75fb1909db17f35da2ac95e05b3bd196cade8918ae30ed7eca
+  checksum: 1bba621689bf6103136fcce318947b9c447999e6cc8f14dbf9b29fc2c4ce6a886ff2c71b10984474baced28a223e674d669ff8c6715a29f4f924d32cbdae7110
   languageName: node
   linkType: hard
 
@@ -4125,7 +4125,7 @@ fsevents@~2.3.2:
     "@parcel/transformer-sass": nightly
     autoprefixer: ^10.3.6
     ipfs-css: ^1.3.0
-    ipfs-http-client: ^53.0.0
+    ipfs-http-client: ^53.0.1
     parcel: nightly
     postcss: ^8.3.8
     rimraf: ^3.0.2
@@ -4133,9 +4133,9 @@ fsevents@~2.3.2:
   languageName: unknown
   linkType: soft
 
-"ipfs-http-client@npm:^53.0.0":
-  version: 53.0.0
-  resolution: "ipfs-http-client@npm:53.0.0"
+"ipfs-http-client@npm:^53.0.1":
+  version: 53.0.1
+  resolution: "ipfs-http-client@npm:53.0.1"
   dependencies:
     "@ipld/dag-cbor": ^6.0.5
     "@ipld/dag-pb": ^2.1.3
@@ -4143,9 +4143,9 @@ fsevents@~2.3.2:
     any-signal: ^2.1.2
     debug: ^4.1.1
     err-code: ^3.0.1
-    ipfs-core-types: ^0.8.0
-    ipfs-core-utils: ^0.11.0
-    ipfs-utils: ^9.0.1
+    ipfs-core-types: ^0.8.1
+    ipfs-core-utils: ^0.11.1
+    ipfs-utils: ^9.0.2
     it-first: ^1.0.6
     it-last: ^1.0.4
     merge-options: ^3.0.4
@@ -4155,7 +4155,7 @@ fsevents@~2.3.2:
     parse-duration: ^1.0.0
     stream-to-it: ^0.2.2
     uint8arrays: ^3.0.0
-  checksum: 7f7e4bbcc9c36dc62214393813bfdf0a5f15056a4828600ac8e7936fac90094169b017dbb7311ea6dba1c59f55b5fa9cb7346163122a96e3cf6355c7e047d165
+  checksum: 406071e1d486a2be6be5c726251ec6d5ed3dc7690f85df40d7b0d785169a422fb7e3bfed35290717b3b6eaa1a15a245905aa9d8ebe0e3ce7f07dc05145fc40df
   languageName: node
   linkType: hard
 
@@ -4169,9 +4169,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ipfs-utils@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "ipfs-utils@npm:9.0.1"
+"ipfs-utils@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "ipfs-utils@npm:9.0.2"
   dependencies:
     abort-controller: ^3.0.0
     any-signal: ^2.1.0
@@ -4180,7 +4180,7 @@ fsevents@~2.3.2:
     err-code: ^3.0.1
     is-electron: ^2.2.0
     iso-url: ^1.1.5
-    it-glob: ~0.0.11
+    it-glob: ^1.0.1
     it-to-stream: ^1.0.0
     merge-options: ^3.0.4
     nanoid: ^3.1.20
@@ -4189,7 +4189,7 @@ fsevents@~2.3.2:
     node-fetch: "https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz"
     react-native-fetch-api: ^2.0.0
     stream-to-it: ^0.2.2
-  checksum: dc002d802aeb7e449b8350631936ba59f60c4ce04c58e3365eb2b53414546e75f1f6f8f5bfd03deae0e439be3b2345331d1a227e0a371467deacb5299e749302
+  checksum: 6036fdbc06c273b4b1526cf8af483eebd61a8785bcb01f47151b7ab5104dcf5c05f6f0fa548f74a6d89c04ec1af8eb4bc22b6a92ba3f65da0cc2755f6f25ffb8
   languageName: node
   linkType: hard
 
@@ -4653,13 +4653,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"it-glob@npm:~0.0.11":
-  version: 0.0.14
-  resolution: "it-glob@npm:0.0.14"
+"it-glob@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "it-glob@npm:1.0.1"
   dependencies:
     "@types/minimatch": ^3.0.4
     minimatch: ^3.0.4
-  checksum: dfef908820f7af2e19fd3fca4e90e3041751bb4e26e90234b86496645d15b1bb140dcd74709287bca1b34c7ad12d4e2de65a03d6b20375f979eed2a7f181aaf5
+  checksum: a84cc74363c1d5660ab7ae4062e42a60eb8851163f74e205d07404332869f91a05e05af8d2ab40a5f804d63f07bc6ae32f79a33a4913d16d2aa18584fb48412c
   languageName: node
   linkType: hard
 

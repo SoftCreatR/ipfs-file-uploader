@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.0-nightly.845"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:53.0.0"],
+            ["ipfs-http-client", "npm:53.0.1"],
             ["parcel", "npm:2.0.0-nightly.843"],
             ["postcss", "npm:8.3.8"],
             ["rimraf", "npm:3.0.2"],
@@ -4855,10 +4855,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-types", [
-        ["npm:0.8.0", {
-          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.0-8e44471065-10f67fa1ad.zip/node_modules/ipfs-core-types/",
+        ["npm:0.8.1", {
+          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.1-0bd37b8f25-7e18ad6dc0.zip/node_modules/ipfs-core-types/",
           "packageDependencies": [
-            ["ipfs-core-types", "npm:0.8.0"],
+            ["ipfs-core-types", "npm:0.8.1"],
             ["interface-datastore", "npm:6.0.3"],
             ["multiaddr", "npm:10.0.1"],
             ["multiformats", "npm:9.4.7"]
@@ -4867,18 +4867,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-utils", [
-        ["npm:0.11.0", {
-          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.11.0-b477bb4d63-71ac6b9f18.zip/node_modules/ipfs-core-utils/",
+        ["npm:0.11.1", {
+          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.11.1-744654efa5-1bba621689.zip/node_modules/ipfs-core-utils/",
           "packageDependencies": [
-            ["ipfs-core-utils", "npm:0.11.0"],
+            ["ipfs-core-utils", "npm:0.11.1"],
             ["any-signal", "npm:2.1.2"],
             ["blob-to-it", "npm:1.0.3"],
             ["browser-readablestream-to-it", "npm:1.0.2"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.0"],
+            ["ipfs-core-types", "npm:0.8.1"],
             ["ipfs-unixfs", "npm:6.0.6"],
-            ["ipfs-utils", "npm:9.0.1"],
+            ["ipfs-utils", "npm:9.0.2"],
             ["it-all", "npm:1.0.5"],
             ["it-map", "npm:1.0.5"],
             ["it-peekable", "npm:1.0.2"],
@@ -4914,7 +4914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.0-nightly.845"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.3.6"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:53.0.0"],
+            ["ipfs-http-client", "npm:53.0.1"],
             ["parcel", "npm:2.0.0-nightly.843"],
             ["postcss", "npm:8.3.8"],
             ["rimraf", "npm:3.0.2"],
@@ -4924,19 +4924,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-http-client", [
-        ["npm:53.0.0", {
-          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-53.0.0-2841f68ed6-7f7e4bbcc9.zip/node_modules/ipfs-http-client/",
+        ["npm:53.0.1", {
+          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-53.0.1-652709e38d-406071e1d4.zip/node_modules/ipfs-http-client/",
           "packageDependencies": [
-            ["ipfs-http-client", "npm:53.0.0"],
+            ["ipfs-http-client", "npm:53.0.1"],
             ["@ipld/dag-cbor", "npm:6.0.10"],
             ["@ipld/dag-pb", "npm:2.1.9"],
             ["abort-controller", "npm:3.0.0"],
             ["any-signal", "npm:2.1.2"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.0"],
-            ["ipfs-core-utils", "npm:0.11.0"],
-            ["ipfs-utils", "npm:9.0.1"],
+            ["ipfs-core-types", "npm:0.8.1"],
+            ["ipfs-core-utils", "npm:0.11.1"],
+            ["ipfs-utils", "npm:9.0.2"],
             ["it-first", "npm:1.0.6"],
             ["it-last", "npm:1.0.5"],
             ["merge-options", "npm:3.0.4"],
@@ -4962,10 +4962,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-utils", [
-        ["npm:9.0.1", {
-          "packageLocation": "./.yarn/cache/ipfs-utils-npm-9.0.1-c3f2491fb6-dc002d802a.zip/node_modules/ipfs-utils/",
+        ["npm:9.0.2", {
+          "packageLocation": "./.yarn/cache/ipfs-utils-npm-9.0.2-a3290973a3-6036fdbc06.zip/node_modules/ipfs-utils/",
           "packageDependencies": [
-            ["ipfs-utils", "npm:9.0.1"],
+            ["ipfs-utils", "npm:9.0.2"],
             ["abort-controller", "npm:3.0.0"],
             ["any-signal", "npm:2.1.2"],
             ["buffer", "npm:6.0.3"],
@@ -4973,12 +4973,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["err-code", "npm:3.0.1"],
             ["is-electron", "npm:2.2.0"],
             ["iso-url", "npm:1.1.5"],
-            ["it-glob", "npm:0.0.14"],
+            ["it-glob", "npm:1.0.1"],
             ["it-to-stream", "npm:1.0.0"],
             ["merge-options", "npm:3.0.4"],
             ["nanoid", "npm:3.1.25"],
             ["native-abort-controller", "virtual:14d42817b2231f8a8dd06edeb23b1acf2fa57fb20de602da61a3ef140a00ff0e827e59e2af2d696c0e64f98737ed7cb42c5d09825e00687282afb3fce105533f#npm:1.0.4"],
-            ["native-fetch", "virtual:c3f2491fb6e136710d47d3a898243b3398c18b7cb216c73169f6ff4f881c0964695bf4f78b8e7541e59dbac97de6e5385d4f74a688e6d746ce5f0f96d9515f0d#npm:3.0.0"],
+            ["native-fetch", "virtual:a3290973a39b91415cd42c5db0a362eb806a944d503a055311666cbc36a00e0e6c479695d725a4c379ecc78a86e6d481ad2acfc439a5f6c2b57ff072e497729a#npm:3.0.0"],
             ["node-fetch", "https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz"],
             ["react-native-fetch-api", "npm:2.0.0"],
             ["stream-to-it", "npm:0.2.4"]
@@ -5512,10 +5512,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["it-glob", [
-        ["npm:0.0.14", {
-          "packageLocation": "./.yarn/cache/it-glob-npm-0.0.14-e97f534522-dfef908820.zip/node_modules/it-glob/",
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/it-glob-npm-1.0.1-58294a9522-a84cc74363.zip/node_modules/it-glob/",
           "packageDependencies": [
-            ["it-glob", "npm:0.0.14"],
+            ["it-glob", "npm:1.0.1"],
             ["@types/minimatch", "npm:3.0.5"],
             ["minimatch", "npm:3.0.4"]
           ],
@@ -6390,10 +6390,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:c3f2491fb6e136710d47d3a898243b3398c18b7cb216c73169f6ff4f881c0964695bf4f78b8e7541e59dbac97de6e5385d4f74a688e6d746ce5f0f96d9515f0d#npm:3.0.0", {
-          "packageLocation": "./.yarn/__virtual__/native-fetch-virtual-0ee8091bca/0/cache/native-fetch-npm-3.0.0-9511457262-eec8cc78d6.zip/node_modules/native-fetch/",
+        ["virtual:a3290973a39b91415cd42c5db0a362eb806a944d503a055311666cbc36a00e0e6c479695d725a4c379ecc78a86e6d481ad2acfc439a5f6c2b57ff072e497729a#npm:3.0.0", {
+          "packageLocation": "./.yarn/__virtual__/native-fetch-virtual-f347183a84/0/cache/native-fetch-npm-3.0.0-9511457262-eec8cc78d6.zip/node_modules/native-fetch/",
           "packageDependencies": [
-            ["native-fetch", "virtual:c3f2491fb6e136710d47d3a898243b3398c18b7cb216c73169f6ff4f881c0964695bf4f78b8e7541e59dbac97de6e5385d4f74a688e6d746ce5f0f96d9515f0d#npm:3.0.0"],
+            ["native-fetch", "virtual:a3290973a39b91415cd42c5db0a362eb806a944d503a055311666cbc36a00e0e6c479695d725a4c379ecc78a86e6d481ad2acfc439a5f6c2b57ff072e497729a#npm:3.0.0"],
             ["@types/node-fetch", null],
             ["node-fetch", "https://registry.npmjs.org/@achingbrain/node-fetch/-/node-fetch-2.6.7.tgz"]
           ],
