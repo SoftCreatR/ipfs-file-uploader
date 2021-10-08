@@ -218,7 +218,7 @@ initIPFSInstance().then(ipfs => {
                         }
 
                         for (const file of files) {
-                            const downloadURL = !IPFSConfig.useLocal() ? `https://${file.cid}.${IPFSConfig.dlUrl()}?filename=${file.name}` : `ipfs://${pathCID}/${file.name}`
+                            const downloadURL = !IPFSConfig.useLocal() ? `https://${pathCID}.${IPFSConfig.dlUrl()}/${file.name}` : `ipfs://${pathCID}/${file.name}`
 
                             DOM.downloadLinks().querySelector("h3:first-child").insertAdjacentHTML("afterend",
                                 `<dl class="fileInfo ba bg-near-white border-gray-muted lh-title pa3">` +
