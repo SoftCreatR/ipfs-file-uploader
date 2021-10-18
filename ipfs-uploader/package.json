@@ -32,12 +32,37 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.0.0-nightly.2491",
-    "@parcel/transformer-jsonld": "2.0.0-nightly.2491",
-    "@parcel/transformer-sass": "2.0.0-nightly.869",
+    "@parcel/config-default": "^2.0.0",
+    "@parcel/package-manager": "^2.0.0",
+    "@parcel/packager-raw-url": "2.0.0",
+    "@parcel/packager-xml": "^2.0.0",
+    "@parcel/plugin": "^2.0.0",
+    "@parcel/transformer-jsonld": "2.0.0",
+    "@parcel/transformer-raw": "^2.0.0",
+    "@parcel/transformer-sass": "2.0.0",
     "autoprefixer": "^10.3.7",
-    "parcel": "2.0.0-nightly.867",
+    "parcel": "^2.0.0",
+    "parcel-config-pwa-manifest": "^0.1.0",
     "postcss": "^8.3.9",
     "rimraf": "^3.0.2"
+  },
+  "pwaManifest": {
+    "name": "IPFS File Uploader | 1-2.dev",
+    "shortName": "IPFS File Uploader",
+    "startURL": "./index.html",
+    "theme": "#6acad1",
+    "generateIconOptions": {
+      "baseIcon": "./src/img/ipfs_logo_notext.svg",
+      "sizes": [
+        192,
+        384,
+        512
+      ],
+      "genFavicons": true,
+      "purpose": [
+        "maskable",
+        "any"
+      ]
+    }
   }
 }
