@@ -116,6 +116,11 @@ const setUploadStatus = (content, isError, enableUploadBtn) => {
 }
 
 initIPFSInstance().then(ipfs => {
+    navigator.serviceWorker.register(
+        new URL('../service-worker.js', import.meta.url),
+        {type: 'module'}
+    );
+
     DOM.accept().addEventListener("change", async (event) => {
         DOM.upload().value = ''
         event.currentTarget.closest("form").remove()

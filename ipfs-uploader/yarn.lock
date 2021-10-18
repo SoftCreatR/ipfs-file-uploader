@@ -782,7 +782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/packager-raw-url@npm:2.0.0":
+"@parcel/packager-raw-url@npm:^2.0.0":
   version: 2.0.0
   resolution: "@parcel/packager-raw-url@npm:2.0.0"
   dependencies:
@@ -919,6 +919,13 @@ __metadata:
     "@parcel/utils": ^2.0.0
     nullthrows: ^1.1.1
   checksum: 9d879881bccafab4cba968c6a54ebcf980ec9b0ca844472395cfc30c283ffac02a1d8d04a098138e5d67ac0ab15da3fda8961d1691c2cca54afc57c5d11fc644
+  languageName: node
+  linkType: hard
+
+"@parcel/service-worker@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@parcel/service-worker@npm:2.0.0"
+  checksum: 0d4db7fe05234bcaa86f931829987d7968a65bb1ad902428df1a270cad6af3b9894d021e5d58fb5350f8ce7beadb4d9d322581fd68b12e8381ace23cf7010093
   languageName: node
   linkType: hard
 
@@ -1088,7 +1095,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-sass@npm:2.0.0":
+"@parcel/transformer-sass@npm:^2.0.0":
   version: 2.0.0
   resolution: "@parcel/transformer-sass@npm:2.0.0"
   dependencies:
@@ -3954,12 +3961,13 @@ fsevents@~2.3.2:
   dependencies:
     "@parcel/config-default": ^2.0.0
     "@parcel/package-manager": ^2.0.0
-    "@parcel/packager-raw-url": 2.0.0
+    "@parcel/packager-raw-url": ^2.0.0
     "@parcel/packager-xml": ^2.0.0
     "@parcel/plugin": ^2.0.0
+    "@parcel/service-worker": ^2.0.0
     "@parcel/transformer-jsonld": 2.0.0
     "@parcel/transformer-raw": ^2.0.0
-    "@parcel/transformer-sass": 2.0.0
+    "@parcel/transformer-sass": ^2.0.0
     autoprefixer: ^10.3.7
     ipfs-css: ^1.3.0
     ipfs-http-client: ^53.0.1

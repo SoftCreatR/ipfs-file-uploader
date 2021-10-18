@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/packager-raw-url", "npm:2.0.0"],
             ["@parcel/packager-xml", "npm:2.0.0"],
             ["@parcel/plugin", "npm:2.0.0"],
+            ["@parcel/service-worker", "npm:2.0.0"],
             ["@parcel/transformer-jsonld", "npm:2.0.0"],
             ["@parcel/transformer-raw", "npm:2.0.0"],
             ["@parcel/transformer-sass", "npm:2.0.0"],
@@ -1237,6 +1238,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/plugin", "npm:2.0.0"],
             ["@parcel/utils", "npm:2.0.0"],
             ["nullthrows", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@parcel/service-worker", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/@parcel-service-worker-npm-2.0.0-f6d4498fac-0d4db7fe05.zip/node_modules/@parcel/service-worker/",
+          "packageDependencies": [
+            ["@parcel/service-worker", "npm:2.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4789,6 +4799,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/packager-raw-url", "npm:2.0.0"],
             ["@parcel/packager-xml", "npm:2.0.0"],
             ["@parcel/plugin", "npm:2.0.0"],
+            ["@parcel/service-worker", "npm:2.0.0"],
             ["@parcel/transformer-jsonld", "npm:2.0.0"],
             ["@parcel/transformer-raw", "npm:2.0.0"],
             ["@parcel/transformer-sass", "npm:2.0.0"],

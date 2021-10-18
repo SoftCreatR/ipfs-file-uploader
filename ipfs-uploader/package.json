@@ -34,12 +34,13 @@
   "devDependencies": {
     "@parcel/config-default": "^2.0.0",
     "@parcel/package-manager": "^2.0.0",
-    "@parcel/packager-raw-url": "2.0.0",
+    "@parcel/packager-raw-url": "^2.0.0",
     "@parcel/packager-xml": "^2.0.0",
     "@parcel/plugin": "^2.0.0",
+    "@parcel/service-worker": "^2.0.0",
     "@parcel/transformer-jsonld": "2.0.0",
     "@parcel/transformer-raw": "^2.0.0",
-    "@parcel/transformer-sass": "2.0.0",
+    "@parcel/transformer-sass": "^2.0.0",
     "autoprefixer": "^10.3.7",
     "parcel": "^2.0.0",
     "parcel-config-pwa-manifest": "^0.1.0",
@@ -47,8 +48,8 @@
     "rimraf": "^3.0.2"
   },
   "pwaManifest": {
-    "name": "IPFS File Uploader | 1-2.dev",
-    "shortName": "IPFS File Uploader",
+    "name": "IPFS File Uploader",
+    "shortName": "IPFS Upload",
     "startURL": "./index.html",
     "theme": "#6acad1",
     "generateIconOptions": {
