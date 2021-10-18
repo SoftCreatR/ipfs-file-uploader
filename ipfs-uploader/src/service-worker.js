@@ -13,6 +13,7 @@ async function install() {
     }
 
     filteredManifest.push("/index.html?local=1")
+    filteredManifest.push("/?local=1")
 
     await cache.addAll(filteredManifest)
 }

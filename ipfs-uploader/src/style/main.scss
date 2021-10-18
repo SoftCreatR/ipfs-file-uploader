@@ -56,3 +56,40 @@ dl.fileInfo {
     height: 10px;
     width: auto;
 }
+
+// WCAG color recommendations
+.charcoal-muted--wcag45,
+.fill-charcoal-muted45 {
+    color: #4f525a
+}
+
+.charcoal-muted--wcag7,
+.fill-charcoal-muted7 {
+    color: #4f525a
+}
+
+.teal-muted--wcag45,
+.fill-teal-muted--wcag45 {
+    color: #388082
+}
+
+.teal-muted--wcag7,
+.fill-teal-muted--wcag7 {
+    color: #2a6062
+}
+
+.link--wcag45 {
+    color: #1076a7
+}
+
+.link--wcag7 {
+    color: #0c587c
+}
+
+.gray--wcag45 {
+    color: #72757d
+}
+
+.gray--wcag7 {
+    color: #56585e
+}

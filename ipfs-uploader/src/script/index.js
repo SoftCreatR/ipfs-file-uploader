@@ -78,11 +78,11 @@ const copyUrl = async (event) => {
 
     try {
         await navigator.clipboard.writeText(btn.getAttribute("data-copy"))
-        btn.innerHTML = icons.check('fill-charcoal-muted')
+        btn.innerHTML = icons.check('fill-charcoal-muted--wcag7')
         btn.setAttribute("data-tooltip", "Copied!")
         btn.style.color = "green"
     } catch (err) {
-        btn.innerHTML = icons.times('fill-charcoal-muted')
+        btn.innerHTML = icons.times('fill-charcoal-muted--wcag7')
         btn.setAttribute("data-tooltip", "Error!")
         btn.style.color = "red"
     }
@@ -91,7 +91,7 @@ const copyUrl = async (event) => {
 
     setTimeout(() => {
         btn.classList.remove('hover')
-        btn.innerHTML = icons.copy('fill-charcoal-muted')
+        btn.innerHTML = icons.copy('fill-charcoal-muted--wcag7')
         btn.setAttribute("data-tooltip", tooltip)
         btn.style.color = "initial"
     }, 2000)
@@ -125,6 +125,7 @@ initIPFSInstance().then(ipfs => {
         DOM.upload().value = ''
         event.currentTarget.closest("form").remove()
         DOM.main().removeAttribute("hidden")
+        DOM.main().setAttribute("aria-hidden", "false")
 
         let isError = false
 
@@ -149,6 +150,8 @@ initIPFSInstance().then(ipfs => {
 
         if (!isError) {
             DOM.upload().removeAttribute("hidden")
+            DOM.upload().setAttribute("aria-hidden", "false")
+            DOM.upload().setAttribute("tabindex", "0")
 
             // handle file selection, pasting and upload
             window.addEventListener("paste", (event) => {
@@ -227,14 +230,14 @@ initIPFSInstance().then(ipfs => {
 
                             DOM.downloadLinks().querySelector("h3:first-child").insertAdjacentHTML("afterend",
                                 `<dl class="fileInfo ba bg-near-white border-gray-muted lh-title pa3">` +
-                                `<dt class="dib pr2 sans-serif charcoal-muted ttu f6 tracked">Filename</dt>` +
+                                `<dt class="dib pr2 sans-serif charcoal-muted--wcag7 ttu f6 tracked">Filename</dt>` +
                                 `<dd class="dib ma0 pa0 fw5 overflow-x-auto overflow-y-hidden w-100">${file.name}</dd>` +
-                                `<dt class="dib pr2 sans-serif charcoal-muted ttu f6 tracked mt3">Filesize</dt>` +
+                                `<dt class="dib pr2 sans-serif charcoal-muted--wcag7 ttu f6 tracked mt3">Filesize</dt>` +
                                 `<dd class="dib ma0 pa0 fw5 overflow-x-auto overflow-y-hidden w-100">${sizeOf(file.size)}</dd>` +
-                                `<dt class="dib pr2 sans-serif charcoal-muted ttu f6 tracked mt3">CIDv1 <span class="pointer items-center fw4 copy" data-copy="${file.cid}" data-tooltip="Copy CIDv1" data-tooltip-location="top">${icons.copy('fill-charcoal-muted')}</span> <a class="pointer no-underline" data-tooltip="Inspect CID" data-tooltip-location="top" href="https://cid.ipfs.io/#${file.cid}" target="_blank" rel="noopener noreferrer">${icons.search('fill-charcoal-muted')}</a></dt>` +
+                                `<dt class="dib pr2 sans-serif charcoal-muted--wcag7 ttu f6 tracked mt3">CIDv1 <span class="pointer items-center fw4 copy" data-copy="${file.cid}" data-tooltip="Copy CIDv1" data-tooltip-location="top">${icons.copy('fill-charcoal-muted')}</span> <a class="pointer no-underline" data-tooltip="Inspect CID" data-tooltip-location="top" href="https://cid.ipfs.io/#${file.cid}" target="_blank" rel="noopener noreferrer">${icons.search('fill-charcoal-muted')}</a></dt>` +
                                 `<dd class="dib ma0 pa0 fw5 overflow-x-auto overflow-y-hidden w-100">${file.cid}</dd>` +
-                                `<dt class="dib pr2 sans-serif charcoal-muted ttu f6 tracked mt3">Download <span class="pointer items-center fw4 copy" data-copy="${downloadURL}" data-tooltip="Copy Download URL" data-tooltip-location="top">${icons.copy('fill-charcoal-muted')}</span></dt>` +
-                                `<dd class="dib ma0 pa0 fw5 overflow-x-auto overflow-y-hidden w-100"><a class="gray hover-black link underline" href="${downloadURL}" title="Download this file" target="_blank" rel="noopener noreferrer">${downloadURL}</a></dd>` +
+                                `<dt class="dib pr2 sans-serif charcoal-muted--wcag7 ttu f6 tracked mt3">Download <span class="pointer items-center fw4 copy" data-copy="${downloadURL}" data-tooltip="Copy Download URL" data-tooltip-location="top">${icons.copy('fill-charcoal-muted')}</span></dt>` +
+                                `<dd class="dib ma0 pa0 fw5 overflow-x-auto overflow-y-hidden w-100"><a class="gray hover-black link--wcag7 underline" href="${downloadURL}" title="Download this file" target="_blank" rel="noopener noreferrer">${downloadURL}</a></dd>` +
                                 `</dl>`
                             )
                         }
