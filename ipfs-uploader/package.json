@@ -44,7 +44,7 @@
     "autoprefixer": "^10.3.7",
     "parcel": "^2.0.0",
     "parcel-config-pwa-manifest": "^0.1.0",
-    "postcss": "^8.3.9",
+    "postcss": "^8.3.11",
     "rimraf": "^3.0.2"
   },
   "pwaManifest": {
