@@ -41,7 +41,7 @@
     "@parcel/transformer-jsonld": "2.0.0",
     "@parcel/transformer-raw": "^2.0.0",
     "@parcel/transformer-sass": "^2.0.0",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.0",
     "parcel": "^2.0.0",
     "parcel-config-pwa-manifest": "^0.1.0",
     "postcss": "^8.3.11",
