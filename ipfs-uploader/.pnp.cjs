@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.1"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:53.0.1"],
+            ["ipfs-http-client", "npm:54.0.0"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
             ["postcss", "npm:8.3.11"],
@@ -4748,10 +4748,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-types", [
-        ["npm:0.8.1", {
-          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.1-0bd37b8f25-7e18ad6dc0.zip/node_modules/ipfs-core-types/",
+        ["npm:0.8.2", {
+          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.2-4623920028-aa16f37983.zip/node_modules/ipfs-core-types/",
           "packageDependencies": [
-            ["ipfs-core-types", "npm:0.8.1"],
+            ["ipfs-core-types", "npm:0.8.2"],
             ["interface-datastore", "npm:6.0.3"],
             ["multiaddr", "npm:10.0.1"],
             ["multiformats", "npm:9.4.9"]
@@ -4760,16 +4760,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-utils", [
-        ["npm:0.11.1", {
-          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.11.1-744654efa5-1bba621689.zip/node_modules/ipfs-core-utils/",
+        ["npm:0.12.0", {
+          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.12.0-1694746d3c-8ad5cb0385.zip/node_modules/ipfs-core-utils/",
           "packageDependencies": [
-            ["ipfs-core-utils", "npm:0.11.1"],
+            ["ipfs-core-utils", "npm:0.12.0"],
             ["any-signal", "npm:2.1.2"],
             ["blob-to-it", "npm:1.0.4"],
             ["browser-readablestream-to-it", "npm:1.0.3"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.1"],
+            ["ipfs-core-types", "npm:0.8.2"],
             ["ipfs-unixfs", "npm:6.0.6"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-all", "npm:1.0.6"],
@@ -4813,7 +4813,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.1"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:53.0.1"],
+            ["ipfs-http-client", "npm:54.0.0"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
             ["postcss", "npm:8.3.11"],
@@ -4824,18 +4824,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-http-client", [
-        ["npm:53.0.1", {
-          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-53.0.1-652709e38d-406071e1d4.zip/node_modules/ipfs-http-client/",
+        ["npm:54.0.0", {
+          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-54.0.0-8d2bf05b0c-f1a4b63e50.zip/node_modules/ipfs-http-client/",
           "packageDependencies": [
-            ["ipfs-http-client", "npm:53.0.1"],
+            ["ipfs-http-client", "npm:54.0.0"],
             ["@ipld/dag-cbor", "npm:6.0.12"],
             ["@ipld/dag-pb", "npm:2.1.12"],
             ["abort-controller", "npm:3.0.0"],
             ["any-signal", "npm:2.1.2"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.1"],
-            ["ipfs-core-utils", "npm:0.11.1"],
+            ["ipfs-core-types", "npm:0.8.2"],
+            ["ipfs-core-utils", "npm:0.12.0"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-first", "npm:1.0.7"],
             ["it-last", "npm:1.0.6"],
