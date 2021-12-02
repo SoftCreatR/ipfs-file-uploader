@@ -46,10 +46,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.1"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:54.0.1"],
+            ["ipfs-http-client", "npm:54.0.2"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
-            ["postcss", "npm:8.3.11"],
+            ["postcss", "npm:8.4.4"],
             ["rimraf", "npm:3.0.2"],
             ["tachyons", "npm:4.12.0"]
           ],
@@ -2107,7 +2107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.1.1"],
             ["normalize-range", "npm:0.1.2"],
             ["picocolors", "npm:1.0.0"],
-            ["postcss", "npm:8.3.11"],
+            ["postcss", "npm:8.4.4"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -4748,28 +4748,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-types", [
-        ["npm:0.8.3", {
-          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.3-bf72d28a85-8c0d92e16f.zip/node_modules/ipfs-core-types/",
+        ["npm:0.8.4", {
+          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.4-f46505be4a-0bf10eb1a4.zip/node_modules/ipfs-core-types/",
           "packageDependencies": [
-            ["ipfs-core-types", "npm:0.8.3"],
+            ["ipfs-core-types", "npm:0.8.4"],
             ["interface-datastore", "npm:6.0.3"],
             ["multiaddr", "npm:10.0.1"],
-            ["multiformats", "npm:9.4.9"]
+            ["multiformats", "npm:9.5.2"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["ipfs-core-utils", [
-        ["npm:0.12.1", {
-          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.12.1-f9bd103d8e-df627b4bd1.zip/node_modules/ipfs-core-utils/",
+        ["npm:0.12.2", {
+          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.12.2-9b96693b64-27aca8bd75.zip/node_modules/ipfs-core-utils/",
           "packageDependencies": [
-            ["ipfs-core-utils", "npm:0.12.1"],
+            ["ipfs-core-utils", "npm:0.12.2"],
             ["any-signal", "npm:2.1.2"],
             ["blob-to-it", "npm:1.0.4"],
             ["browser-readablestream-to-it", "npm:1.0.3"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.3"],
+            ["ipfs-core-types", "npm:0.8.4"],
             ["ipfs-unixfs", "npm:6.0.6"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-all", "npm:1.0.6"],
@@ -4779,7 +4779,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["merge-options", "npm:3.0.4"],
             ["multiaddr", "npm:10.0.1"],
             ["multiaddr-to-uri", "npm:8.0.0"],
-            ["multiformats", "npm:9.4.9"],
+            ["multiformats", "npm:9.5.2"],
             ["nanoid", "npm:3.1.30"],
             ["parse-duration", "npm:1.0.2"],
             ["timeout-abort-controller", "npm:1.1.1"],
@@ -4813,10 +4813,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-sass", "npm:2.0.1"],
             ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:54.0.1"],
+            ["ipfs-http-client", "npm:54.0.2"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
-            ["postcss", "npm:8.3.11"],
+            ["postcss", "npm:8.4.4"],
             ["rimraf", "npm:3.0.2"],
             ["tachyons", "npm:4.12.0"]
           ],
@@ -4824,24 +4824,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-http-client", [
-        ["npm:54.0.1", {
-          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-54.0.1-5ec0f41e38-c845ec2a12.zip/node_modules/ipfs-http-client/",
+        ["npm:54.0.2", {
+          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-54.0.2-cb6b87c3fa-4c982cd984.zip/node_modules/ipfs-http-client/",
           "packageDependencies": [
-            ["ipfs-http-client", "npm:54.0.1"],
+            ["ipfs-http-client", "npm:54.0.2"],
             ["@ipld/dag-cbor", "npm:6.0.12"],
             ["@ipld/dag-pb", "npm:2.1.12"],
             ["abort-controller", "npm:3.0.0"],
             ["any-signal", "npm:2.1.2"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.3"],
-            ["ipfs-core-utils", "npm:0.12.1"],
+            ["ipfs-core-types", "npm:0.8.4"],
+            ["ipfs-core-utils", "npm:0.12.2"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-first", "npm:1.0.7"],
             ["it-last", "npm:1.0.6"],
             ["merge-options", "npm:3.0.4"],
             ["multiaddr", "npm:10.0.1"],
-            ["multiformats", "npm:9.4.9"],
+            ["multiformats", "npm:9.5.2"],
             ["native-abort-controller", "virtual:14d42817b2231f8a8dd06edeb23b1acf2fa57fb20de602da61a3ef140a00ff0e827e59e2af2d696c0e64f98737ed7cb42c5d09825e00687282afb3fce105533f#npm:1.0.4"],
             ["parse-duration", "npm:1.0.2"],
             ["stream-to-it", "npm:0.2.4"],
@@ -6017,6 +6017,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["multiformats", "npm:9.4.9"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:9.5.2", {
+          "packageLocation": "./.yarn/cache/multiformats-npm-9.5.2-16b73acc67-fadaad7803.zip/node_modules/multiformats/",
+          "packageDependencies": [
+            ["multiformats", "npm:9.5.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["nan", [
@@ -6783,6 +6790,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nanoid", "npm:3.1.30"],
             ["picocolors", "npm:1.0.0"],
             ["source-map-js", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.4.4", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.4-59028ec3b7-6cf3fe0ecd.zip/node_modules/postcss/",
+          "packageDependencies": [
+            ["postcss", "npm:8.4.4"],
+            ["nanoid", "npm:3.1.30"],
+            ["picocolors", "npm:1.0.0"],
+            ["source-map-js", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -8388,6 +8405,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/source-map-js-npm-0.6.2-af388ea7f1-9c8151a29e.zip/node_modules/source-map-js/",
           "packageDependencies": [
             ["source-map-js", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/source-map-js-npm-1.0.1-c86a8e0dcb-22606113d6.zip/node_modules/source-map-js/",
+          "packageDependencies": [
+            ["source-map-js", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
