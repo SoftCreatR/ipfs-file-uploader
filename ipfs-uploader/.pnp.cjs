@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ipfs-http-client", "npm:54.0.2"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
-            ["postcss", "npm:8.4.4"],
+            ["postcss", "npm:8.4.5"],
             ["rimraf", "npm:3.0.2"],
             ["tachyons", "npm:4.12.0"]
           ],
@@ -2107,7 +2107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.1.1"],
             ["normalize-range", "npm:0.1.2"],
             ["picocolors", "npm:1.0.0"],
-            ["postcss", "npm:8.4.4"],
+            ["postcss", "npm:8.4.5"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -4816,7 +4816,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ipfs-http-client", "npm:54.0.2"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
-            ["postcss", "npm:8.4.4"],
+            ["postcss", "npm:8.4.5"],
             ["rimraf", "npm:3.0.2"],
             ["tachyons", "npm:4.12.0"]
           ],
@@ -6793,10 +6793,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.4.4", {
-          "packageLocation": "./.yarn/cache/postcss-npm-8.4.4-59028ec3b7-6cf3fe0ecd.zip/node_modules/postcss/",
+        ["npm:8.4.5", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.5-675038f8bb-b78abdd89c.zip/node_modules/postcss/",
           "packageDependencies": [
-            ["postcss", "npm:8.4.4"],
+            ["postcss", "npm:8.4.5"],
             ["nanoid", "npm:3.1.30"],
             ["picocolors", "npm:1.0.0"],
             ["source-map-js", "npm:1.0.1"]
