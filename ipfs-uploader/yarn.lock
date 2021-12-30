@@ -298,13 +298,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ipld/dag-cbor@npm:^6.0.5":
-  version: 6.0.12
-  resolution: "@ipld/dag-cbor@npm:6.0.12"
+"@ipld/dag-cbor@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "@ipld/dag-cbor@npm:7.0.0"
   dependencies:
-    cborg: ^1.2.1
-    multiformats: ^9.0.0
-  checksum: 1c8a446740e7b3f92241a068c2239ad7e2f02e077d1f554da7e7147f8a10053d57f4cb23ef641626c0212f8e222b79d626c612c468e501d706a8f706e522b918
+    cborg: ^1.6.0
+    multiformats: ^9.5.4
+  checksum: 1bfb7ca1f54abb01ae6005e73c31a84efee2606450d91147e065d862712db42e9dc2c355f2484d3aae48155198d54b27bd7bfe2600e65c65b55d402bcac0d7b8
+  languageName: node
+  linkType: hard
+
+"@ipld/dag-json@npm:^8.0.1":
+  version: 8.0.7
+  resolution: "@ipld/dag-json@npm:8.0.7"
+  dependencies:
+    cborg: ^1.5.4
+    multiformats: ^9.5.4
+  checksum: 7a5cedd3d9ba3a1d46d1cd4d10427021e19456e2579da7d5f28fdbbc70481483e92103d41f02f4ee854d0ed5bcf061bf415ff22c85fc7c2e73bb42e42e339390
   languageName: node
   linkType: hard
 
@@ -1640,21 +1650,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.0":
-  version: 10.4.0
-  resolution: "autoprefixer@npm:10.4.0"
+"autoprefixer@npm:^10.4.1":
+  version: 10.4.1
+  resolution: "autoprefixer@npm:10.4.1"
   dependencies:
-    browserslist: ^4.17.5
-    caniuse-lite: ^1.0.30001272
-    fraction.js: ^4.1.1
+    browserslist: ^4.19.1
+    caniuse-lite: ^1.0.30001294
+    fraction.js: ^4.1.2
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
-    postcss-value-parser: ^4.1.0
+    postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: 7d511c64daeaa13c7888b40b0394cd891fab1852a1f60165330c9e49ab70ac29ad1e3386665d86361661cf2bbe90cea42b78ea73cb77b373ffe30a8f4973a955
+  checksum: 96527cd62b88e44ad3949fd2dedcc771ece8818d0bfffffdffd9aa87e409e4c5c00cf0cda1ebe1dc75910a62052d33a7628adf3c13a1763ba7677c027250f88c
   languageName: node
   linkType: hard
 
@@ -1879,7 +1889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.16.0, browserslist@npm:^4.16.6, browserslist@npm:^4.17.5, browserslist@npm:^4.6.6":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.16.0, browserslist@npm:^4.16.6, browserslist@npm:^4.6.6":
   version: 4.17.5
   resolution: "browserslist@npm:4.17.5"
   dependencies:
@@ -1891,6 +1901,21 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: 0a1d762305c39dd317bb21e3159f44250bb1029a497f9a901ef5066f909263372eaacda58fd39174121c2741c0c32a7e6ace04df9172abe22c2fb69eba139a01
+  languageName: node
+  linkType: hard
+
+"browserslist@npm:^4.19.1":
+  version: 4.19.1
+  resolution: "browserslist@npm:4.19.1"
+  dependencies:
+    caniuse-lite: ^1.0.30001286
+    electron-to-chromium: ^1.4.17
+    escalade: ^3.1.1
+    node-releases: ^2.0.1
+    picocolors: ^1.0.0
+  bin:
+    browserslist: cli.js
+  checksum: c0777fd483691638fd6801e16c9d809e1d65f6d2b06db2e806654be51045cbab1452a89841a2c5caea2cbe19d621b4f1d391cffbb24512aa33280039ab345875
   languageName: node
   linkType: hard
 
@@ -2004,10 +2029,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001272":
-  version: 1.0.30001274
-  resolution: "caniuse-lite@npm:1.0.30001274"
-  checksum: 75790d021edbc68dbb36c0bc63255fad1e7aa3986039e685d10340e7e9a37147b0ddedaba22cf6c52b3657cca794ed41af88045ad5cce79084e9361e95f1c5d4
+"caniuse-lite@npm:^1.0.30001286, caniuse-lite@npm:^1.0.30001294":
+  version: 1.0.30001294
+  resolution: "caniuse-lite@npm:1.0.30001294"
+  checksum: 4e22649ef83781afbe6c81d6112ceac23c3ba29f91597ca1c14d323d5bfb646571edeb17436e76a29b07c8e9d75468655a2098a3e13dcc1438db47ff46fbb3ad
   languageName: node
   linkType: hard
 
@@ -2018,12 +2043,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cborg@npm:^1.2.1":
-  version: 1.5.2
-  resolution: "cborg@npm:1.5.2"
+"cborg@npm:^1.5.4, cborg@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "cborg@npm:1.6.0"
   bin:
     cborg: cli.js
-  checksum: 4bde95614518d45cafe76faa7b2b990d7d6fef5d95ef0fab4f8b3214799d5fdf43feab1c56b31a139ddb2aaa479ec4fc083cd8e82f07a414da2b019a32a7b507
+  checksum: 1a8b94423a872917a950dff00bf9e3ef3c6c2e81201881618c2e828b5fb5d86edbc05187343c3861ba8a2a6bd3383ba9f45a42e26aa1064d04a6f8fe93f07043
   languageName: node
   linkType: hard
 
@@ -2852,6 +2877,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"electron-to-chromium@npm:^1.4.17":
+  version: 1.4.30
+  resolution: "electron-to-chromium@npm:1.4.30"
+  checksum: ae786f52ee2530648e68264a6a771b6ca60d3c2b192f19e799be9aa5df0f9819d6a183f771497f37fb03df28846b968aab79252c79ca1f397ca030ccf7733c9f
+  languageName: node
+  linkType: hard
+
 "elliptic@npm:^6.5.3":
   version: 6.5.4
   resolution: "elliptic@npm:6.5.4"
@@ -3308,10 +3340,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fraction.js@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "fraction.js@npm:4.1.1"
-  checksum: e5a1f81d73e32aabf4fbd6581a7b3dfabd9a449ceb97c7e71ed2931dd0607095622341100d7819741eb9b435eb4e0d4a040a69e411dc943fa9b3a3872f3a2e0f
+"fraction.js@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "fraction.js@npm:4.1.2"
+  checksum: a67eff2b599cb6546b77ce9c913bd0cccd646e1a525c793ba4e0bf5a399fc403f379227fca83423a6ea79d01e35c2f2b0f141ffa1d09e41377041268a53fb150
   languageName: node
   linkType: hard
 
@@ -3917,27 +3949,27 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ipfs-core-types@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "ipfs-core-types@npm:0.8.4"
+"ipfs-core-types@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "ipfs-core-types@npm:0.9.0"
   dependencies:
     interface-datastore: ^6.0.2
     multiaddr: ^10.0.0
     multiformats: ^9.4.13
-  checksum: 0bf10eb1a469404b4af302356d16c8fb517fb7df15a4d02d3a3930b8fd7d78133220aaf3357b6066e6961187270af611f00483762c4383d24f91884c412c2099
+  checksum: 22db8e039348dc372c99b45a87ce8dce81e15fa710cee410c1731004d528e0bd0da96b5a4c5571d501313fae93316af3b902c2220c486d2fade2e53f07a7d17b
   languageName: node
   linkType: hard
 
-"ipfs-core-utils@npm:^0.12.2":
-  version: 0.12.2
-  resolution: "ipfs-core-utils@npm:0.12.2"
+"ipfs-core-utils@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "ipfs-core-utils@npm:0.13.0"
   dependencies:
     any-signal: ^2.1.2
     blob-to-it: ^1.0.1
     browser-readablestream-to-it: ^1.0.1
     debug: ^4.1.1
     err-code: ^3.0.1
-    ipfs-core-types: ^0.8.4
+    ipfs-core-types: ^0.9.0
     ipfs-unixfs: ^6.0.3
     ipfs-utils: ^9.0.2
     it-all: ^1.0.4
@@ -3950,9 +3982,9 @@ fsevents@~2.3.2:
     multiformats: ^9.4.13
     nanoid: ^3.1.23
     parse-duration: ^1.0.0
-    timeout-abort-controller: ^1.1.1
+    timeout-abort-controller: ^2.0.0
     uint8arrays: ^3.0.0
-  checksum: 27aca8bd75f2c89580cd458cc791e2fa6d6f6ee51a0a491c24fa9c50b9bbee4f9eb0c080466cdc8683bfb51935661a7858768bbd656618dc51eb22deafa9f270
+  checksum: af46717a69cf2e4f1bfbd77c7c1951eaa8b9619bdb888ca971849dc2d2468aceb0238e2f47ae45568478b2ceb1428ae7061239afc92aac06691f7bea9e21e4eb
   languageName: node
   linkType: hard
 
@@ -3976,9 +4008,9 @@ fsevents@~2.3.2:
     "@parcel/transformer-jsonld": 2.0.1
     "@parcel/transformer-raw": ^2.0.1
     "@parcel/transformer-sass": ^2.0.1
-    autoprefixer: ^10.4.0
+    autoprefixer: ^10.4.1
     ipfs-css: ^1.3.0
-    ipfs-http-client: ^54.0.2
+    ipfs-http-client: ^55.0.0
     parcel: ^2.0.1
     parcel-config-pwa-manifest: ^0.1.0
     postcss: ^8.4.5
@@ -3987,18 +4019,19 @@ fsevents@~2.3.2:
   languageName: unknown
   linkType: soft
 
-"ipfs-http-client@npm:^54.0.2":
-  version: 54.0.2
-  resolution: "ipfs-http-client@npm:54.0.2"
+"ipfs-http-client@npm:^55.0.0":
+  version: 55.0.0
+  resolution: "ipfs-http-client@npm:55.0.0"
   dependencies:
-    "@ipld/dag-cbor": ^6.0.5
+    "@ipld/dag-cbor": ^7.0.0
+    "@ipld/dag-json": ^8.0.1
     "@ipld/dag-pb": ^2.1.3
     abort-controller: ^3.0.0
     any-signal: ^2.1.2
     debug: ^4.1.1
     err-code: ^3.0.1
-    ipfs-core-types: ^0.8.4
-    ipfs-core-utils: ^0.12.2
+    ipfs-core-types: ^0.9.0
+    ipfs-core-utils: ^0.13.0
     ipfs-utils: ^9.0.2
     it-first: ^1.0.6
     it-last: ^1.0.4
@@ -4009,7 +4042,7 @@ fsevents@~2.3.2:
     parse-duration: ^1.0.0
     stream-to-it: ^0.2.2
     uint8arrays: ^3.0.0
-  checksum: 4c982cd984dd9e8aa5bb3c193b97cc82a688f9207750cff96e3cfe2deab13d95782d02f05273ddbedc44b4d37abe3242cdeda49461288e45d8aea93c94d270be
+  checksum: b44394475dd9f6ef2e68cf22fb5bacf93c1a8967712f12a56baf9e90f183d625569bcabfe2e7c0d1cd2f0a2eed577ab8282f5a737552faf83d3b8a82d7910494
   languageName: node
   linkType: hard
 
@@ -5057,6 +5090,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"multiformats@npm:^9.5.4":
+  version: 9.5.4
+  resolution: "multiformats@npm:9.5.4"
+  checksum: f44fb2e7449c116c0075b4e1c1e632ea5268dca63eb90e2b6546339fdffb1a5f1284300dc74473cca8282cdac0ad016ba8428bba2b1fe2eaa338cadbffaaba87
+  languageName: node
+  linkType: hard
+
 "nan@npm:^2.14.2":
   version: 2.15.0
   resolution: "nan@npm:2.15.0"
@@ -5089,7 +5129,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"native-abort-controller@npm:^1.0.3":
+"native-abort-controller@npm:^1.0.3, native-abort-controller@npm:^1.0.4":
   version: 1.0.4
   resolution: "native-abort-controller@npm:1.0.4"
   peerDependencies:
@@ -6078,6 +6118,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"postcss-value-parser@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0"
+  checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
+  languageName: node
+  linkType: hard
+
 "postcss@npm:6.0.1":
   version: 6.0.1
   resolution: "postcss@npm:6.0.1"
@@ -6531,10 +6578,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"retimer@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "retimer@npm:2.0.0"
-  checksum: a59c837e1b364c4ef85c19250a94c09a49c55076ec3c5c51fafa335ee89d2ac2b91b7623548c8edb1345d7515b054986e904f8429e6caefa0595c2c70be8923d
+"retimer@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "retimer@npm:3.0.0"
+  checksum: f88309196e9d4f2d4be0c76eafc27a9f102c74b40b391ce730785b052c345d7bd59c3e4411a4c422f89f19a42b97b28034639e2f06c63133a06ec8958e9e7516
   languageName: node
   linkType: hard
 
@@ -7221,13 +7268,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"timeout-abort-controller@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "timeout-abort-controller@npm:1.1.1"
+"timeout-abort-controller@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "timeout-abort-controller@npm:2.0.0"
   dependencies:
     abort-controller: ^3.0.0
-    retimer: ^2.0.0
-  checksum: 070c220be4cac532f8cfbffccba3497baf3abe97d4bfc62344dba832b55a2eef1f0e60f33d862a1662e14852c9ef8ae952d1d93f5626d39b6592f29d7d00bd45
+    native-abort-controller: ^1.0.4
+    retimer: ^3.0.0
+  checksum: 7f57cb6d5f4dcdcefe9c89deacc70c07ecafdba32d51333eca6aaf91e70bbff7e6ad13d9c098480d27a6f360383685f84819a3f475a5cfe8d3f3c7da465d1da7
   languageName: node
   linkType: hard
 

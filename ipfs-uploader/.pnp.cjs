@@ -44,9 +44,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-jsonld", "npm:2.0.1"],
             ["@parcel/transformer-raw", "npm:2.0.1"],
             ["@parcel/transformer-sass", "npm:2.0.1"],
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.1"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:54.0.2"],
+            ["ipfs-http-client", "npm:55.0.0"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
             ["postcss", "npm:8.4.5"],
@@ -417,12 +417,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@ipld/dag-cbor", [
-        ["npm:6.0.12", {
-          "packageLocation": "./.yarn/cache/@ipld-dag-cbor-npm-6.0.12-0a08d2f14e-1c8a446740.zip/node_modules/@ipld/dag-cbor/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/@ipld-dag-cbor-npm-7.0.0-9265dd760e-1bfb7ca1f5.zip/node_modules/@ipld/dag-cbor/",
           "packageDependencies": [
-            ["@ipld/dag-cbor", "npm:6.0.12"],
-            ["cborg", "npm:1.5.2"],
-            ["multiformats", "npm:9.4.9"]
+            ["@ipld/dag-cbor", "npm:7.0.0"],
+            ["cborg", "npm:1.6.0"],
+            ["multiformats", "npm:9.5.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@ipld/dag-json", [
+        ["npm:8.0.7", {
+          "packageLocation": "./.yarn/cache/@ipld-dag-json-npm-8.0.7-be187e9d8c-7a5cedd3d9.zip/node_modules/@ipld/dag-json/",
+          "packageDependencies": [
+            ["@ipld/dag-json", "npm:8.0.7"],
+            ["cborg", "npm:1.6.0"],
+            ["multiformats", "npm:9.5.4"]
           ],
           "linkType": "HARD",
         }]
@@ -2090,25 +2101,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["autoprefixer", [
-        ["npm:10.4.0", {
-          "packageLocation": "./.yarn/cache/autoprefixer-npm-10.4.0-71e06cafae-7d511c64da.zip/node_modules/autoprefixer/",
+        ["npm:10.4.1", {
+          "packageLocation": "./.yarn/cache/autoprefixer-npm-10.4.1-fa09ff3343-96527cd62b.zip/node_modules/autoprefixer/",
           "packageDependencies": [
-            ["autoprefixer", "npm:10.4.0"]
+            ["autoprefixer", "npm:10.4.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0", {
-          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-f6aae1d754/0/cache/autoprefixer-npm-10.4.0-71e06cafae-7d511c64da.zip/node_modules/autoprefixer/",
+        ["virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.1", {
+          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-d0fdf1b995/0/cache/autoprefixer-npm-10.4.1-fa09ff3343-96527cd62b.zip/node_modules/autoprefixer/",
           "packageDependencies": [
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.1"],
             ["@types/postcss", null],
-            ["browserslist", "npm:4.17.5"],
-            ["caniuse-lite", "npm:1.0.30001274"],
-            ["fraction.js", "npm:4.1.1"],
+            ["browserslist", "npm:4.19.1"],
+            ["caniuse-lite", "npm:1.0.30001294"],
+            ["fraction.js", "npm:4.1.2"],
             ["normalize-range", "npm:0.1.2"],
             ["picocolors", "npm:1.0.0"],
             ["postcss", "npm:8.4.5"],
-            ["postcss-value-parser", "npm:4.1.0"]
+            ["postcss-value-parser", "npm:4.2.0"]
           ],
           "packagePeers": [
             "@types/postcss",
@@ -2386,6 +2397,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picocolors", "npm:1.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.19.1", {
+          "packageLocation": "./.yarn/cache/browserslist-npm-4.19.1-e9de2a4009-c0777fd483.zip/node_modules/browserslist/",
+          "packageDependencies": [
+            ["browserslist", "npm:4.19.1"],
+            ["caniuse-lite", "npm:1.0.30001294"],
+            ["electron-to-chromium", "npm:1.4.30"],
+            ["escalade", "npm:3.1.1"],
+            ["node-releases", "npm:2.0.1"],
+            ["picocolors", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["buffer", [
@@ -2512,10 +2535,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.30001274", {
-          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001274-9b32e73fc7-75790d021e.zip/node_modules/caniuse-lite/",
+        ["npm:1.0.30001294", {
+          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001294-c42d943e4c-4e22649ef8.zip/node_modules/caniuse-lite/",
           "packageDependencies": [
-            ["caniuse-lite", "npm:1.0.30001274"]
+            ["caniuse-lite", "npm:1.0.30001294"]
           ],
           "linkType": "HARD",
         }]
@@ -2530,10 +2553,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["cborg", [
-        ["npm:1.5.2", {
-          "packageLocation": "./.yarn/cache/cborg-npm-1.5.2-cea0aaa084-4bde956145.zip/node_modules/cborg/",
+        ["npm:1.6.0", {
+          "packageLocation": "./.yarn/cache/cborg-npm-1.6.0-4a76c4b202-1a8b94423a.zip/node_modules/cborg/",
           "packageDependencies": [
-            ["cborg", "npm:1.5.2"]
+            ["cborg", "npm:1.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -3520,6 +3543,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["electron-to-chromium", "npm:1.3.878"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.4.30", {
+          "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.30-787baac84d-ae786f52ee.zip/node_modules/electron-to-chromium/",
+          "packageDependencies": [
+            ["electron-to-chromium", "npm:1.4.30"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["elliptic", [
@@ -4054,10 +4084,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["fraction.js", [
-        ["npm:4.1.1", {
-          "packageLocation": "./.yarn/cache/fraction.js-npm-4.1.1-17f3b8b11b-e5a1f81d73.zip/node_modules/fraction.js/",
+        ["npm:4.1.2", {
+          "packageLocation": "./.yarn/cache/fraction.js-npm-4.1.2-00af493191-a67eff2b59.zip/node_modules/fraction.js/",
           "packageDependencies": [
-            ["fraction.js", "npm:4.1.1"]
+            ["fraction.js", "npm:4.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -4748,10 +4778,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-types", [
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.8.4-f46505be4a-0bf10eb1a4.zip/node_modules/ipfs-core-types/",
+        ["npm:0.9.0", {
+          "packageLocation": "./.yarn/cache/ipfs-core-types-npm-0.9.0-375bec901e-22db8e0393.zip/node_modules/ipfs-core-types/",
           "packageDependencies": [
-            ["ipfs-core-types", "npm:0.8.4"],
+            ["ipfs-core-types", "npm:0.9.0"],
             ["interface-datastore", "npm:6.0.3"],
             ["multiaddr", "npm:10.0.1"],
             ["multiformats", "npm:9.5.2"]
@@ -4760,16 +4790,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-core-utils", [
-        ["npm:0.12.2", {
-          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.12.2-9b96693b64-27aca8bd75.zip/node_modules/ipfs-core-utils/",
+        ["npm:0.13.0", {
+          "packageLocation": "./.yarn/cache/ipfs-core-utils-npm-0.13.0-843cabbc4a-af46717a69.zip/node_modules/ipfs-core-utils/",
           "packageDependencies": [
-            ["ipfs-core-utils", "npm:0.12.2"],
+            ["ipfs-core-utils", "npm:0.13.0"],
             ["any-signal", "npm:2.1.2"],
             ["blob-to-it", "npm:1.0.4"],
             ["browser-readablestream-to-it", "npm:1.0.3"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.4"],
+            ["ipfs-core-types", "npm:0.9.0"],
             ["ipfs-unixfs", "npm:6.0.6"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-all", "npm:1.0.6"],
@@ -4782,7 +4812,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["multiformats", "npm:9.5.2"],
             ["nanoid", "npm:3.1.30"],
             ["parse-duration", "npm:1.0.2"],
-            ["timeout-abort-controller", "npm:1.1.1"],
+            ["timeout-abort-controller", "npm:2.0.0"],
             ["uint8arrays", "npm:3.0.0"]
           ],
           "linkType": "HARD",
@@ -4811,9 +4841,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@parcel/transformer-jsonld", "npm:2.0.1"],
             ["@parcel/transformer-raw", "npm:2.0.1"],
             ["@parcel/transformer-sass", "npm:2.0.1"],
-            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.0"],
+            ["autoprefixer", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:10.4.1"],
             ["ipfs-css", "npm:1.3.0"],
-            ["ipfs-http-client", "npm:54.0.2"],
+            ["ipfs-http-client", "npm:55.0.0"],
             ["parcel", "npm:2.0.1"],
             ["parcel-config-pwa-manifest", "virtual:6e8d269bc2f3f05a1997a4c9499b19ef9c4255027d11c52244cd81466bcaa17187b7d461373220cff3559de5cf26d42062595f61b172343968be9b8e7b426cbc#npm:0.1.0"],
             ["postcss", "npm:8.4.5"],
@@ -4824,18 +4854,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ipfs-http-client", [
-        ["npm:54.0.2", {
-          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-54.0.2-cb6b87c3fa-4c982cd984.zip/node_modules/ipfs-http-client/",
+        ["npm:55.0.0", {
+          "packageLocation": "./.yarn/cache/ipfs-http-client-npm-55.0.0-f609b76f4a-b44394475d.zip/node_modules/ipfs-http-client/",
           "packageDependencies": [
-            ["ipfs-http-client", "npm:54.0.2"],
-            ["@ipld/dag-cbor", "npm:6.0.12"],
+            ["ipfs-http-client", "npm:55.0.0"],
+            ["@ipld/dag-cbor", "npm:7.0.0"],
+            ["@ipld/dag-json", "npm:8.0.7"],
             ["@ipld/dag-pb", "npm:2.1.12"],
             ["abort-controller", "npm:3.0.0"],
             ["any-signal", "npm:2.1.2"],
             ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
             ["err-code", "npm:3.0.1"],
-            ["ipfs-core-types", "npm:0.8.4"],
-            ["ipfs-core-utils", "npm:0.12.2"],
+            ["ipfs-core-types", "npm:0.9.0"],
+            ["ipfs-core-utils", "npm:0.13.0"],
             ["ipfs-utils", "npm:9.0.2"],
             ["it-first", "npm:1.0.7"],
             ["it-last", "npm:1.0.6"],
@@ -6022,6 +6053,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/multiformats-npm-9.5.2-16b73acc67-fadaad7803.zip/node_modules/multiformats/",
           "packageDependencies": [
             ["multiformats", "npm:9.5.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:9.5.4", {
+          "packageLocation": "./.yarn/cache/multiformats-npm-9.5.4-7a202eb4ba-f44fb2e744.zip/node_modules/multiformats/",
+          "packageDependencies": [
+            ["multiformats", "npm:9.5.4"]
           ],
           "linkType": "HARD",
         }]
@@ -7575,6 +7613,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/postcss-value-parser-npm-4.2.0-3cef602a6a-819ffab0c9.zip/node_modules/postcss-value-parser/",
+          "packageDependencies": [
+            ["postcss-value-parser", "npm:4.2.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["posthtml", [
@@ -8052,10 +8097,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["retimer", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/retimer-npm-2.0.0-2e0fdb2f4c-a59c837e1b.zip/node_modules/retimer/",
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/retimer-npm-3.0.0-a791f535cc-f88309196e.zip/node_modules/retimer/",
           "packageDependencies": [
-            ["retimer", "npm:2.0.0"]
+            ["retimer", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8810,12 +8855,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["timeout-abort-controller", [
-        ["npm:1.1.1", {
-          "packageLocation": "./.yarn/cache/timeout-abort-controller-npm-1.1.1-486bf308ea-070c220be4.zip/node_modules/timeout-abort-controller/",
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/timeout-abort-controller-npm-2.0.0-30dd18691c-7f57cb6d5f.zip/node_modules/timeout-abort-controller/",
           "packageDependencies": [
-            ["timeout-abort-controller", "npm:1.1.1"],
+            ["timeout-abort-controller", "npm:2.0.0"],
             ["abort-controller", "npm:3.0.0"],
-            ["retimer", "npm:2.0.0"]
+            ["native-abort-controller", "virtual:14d42817b2231f8a8dd06edeb23b1acf2fa57fb20de602da61a3ef140a00ff0e827e59e2af2d696c0e64f98737ed7cb42c5d09825e00687282afb3fce105533f#npm:1.0.4"],
+            ["retimer", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
