@@ -1,5 +1,5 @@
 # IPFS File Uploader
-#### A website for uploading files to IPFS
+#### A website for uploading files to IPFS, using [Helia](https://github.com/ipfs/helia)
 
 <div align="center">
 

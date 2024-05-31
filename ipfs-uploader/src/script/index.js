@@ -1,6 +1,9 @@
 'use strict'
 
-const IPFS = require('ipfs-http-client')
+import { createHeliaHTTP } from '@helia/http'
+import { trustlessGateway } from '@helia/block-brokers'
+import { delegatedHTTPRouting } from '@helia/routers'
+import { unixfs } from '@helia/unixfs'
 
 const DOM = {
     accept: () => document.getElementById("accept"),
@@ -14,7 +17,7 @@ const DOM = {
 const icons = {
     copy: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 448 512"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM352 32.491a15.88 15.88 0 0 1 7.431 4.195l51.882 51.883A15.885 15.885 0 0 1 415.508 96H352V32.491zM288 464c0 8.822-7.178 16-16 16H48c-8.822 0-16-7.178-16-16V144c0-8.822 7.178-16 16-16h80v240c0 26.51 21.49 48 48 48h112v48zm128-96c0 8.822-7.178 16-16 16H176c-8.822 0-16-7.178-16-16V48c0-8.822 7.178-16 16-16h144v72c0 13.2 10.8 24 24 24h72v240z"/></svg>',
     check: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 448 512"><path d="M413.505 91.951L133.49 371.966l-98.995-98.995c-4.686-4.686-12.284-4.686-16.971 0L6.211 284.284c-4.686 4.686-4.686 12.284 0 16.971l118.794 118.794c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-11.314-11.314c-4.686-4.686-12.284-4.686-16.97 0z"/></svg>',
-    times: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 320 512"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/></svg>',
+    times: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 320 512"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12-3.12 8.19-3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/></svg>',
     search: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 512 512"><path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/></svg>',
     circle: (classList) => '<svg class="icon' + (classList ? ' ' + classList : '') + '" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20"></svg>'
 }
@@ -23,22 +26,26 @@ const urlParams = new URLSearchParams(window.location.search)
 
 const IPFSConfig = {
     useLocal: () => urlParams.get("local") === "1",
-    //host: () => IPFSConfig.useLocal() ? "127.0.0.1" : (location.hostname === "ipfs.1-2.dev" ? location.hostname : "ipfs.infura.io"),
-    host: () => IPFSConfig.useLocal() ? "127.0.0.1" : "ipfs.infura.io",
-    port: () => IPFSConfig.useLocal() && urlParams.get("port") ? parseInt(urlParams.get("port")) : 5001,
-    //dlUrl: () => (location.hostname === "ipfs.1-2.dev" ? "ipfs.ipfs.1-2.dev" : "ipfs.infura-ipfs.io")
-    dlUrl: () => "ipfs.infura-ipfs.io"
+    host: () => IPFSConfig.useLocal() ? "http://127.0.0.1" : "https://cloudflare-ipfs.com",
+    dlUrl: () => "ipfs.cf-ipfs.com"
 }
 
 let progressSizes = {}
 let cumulativeFilesize = 0
 
 const initIPFSInstance = async () => {
-    return IPFS.create({
-        host: IPFSConfig.host(),
-        port: IPFSConfig.port(),
-        protocol: IPFSConfig.useLocal() ? "http" : "https"
+    const helia = await createHeliaHTTP({
+        blockBrokers: [
+            trustlessGateway({
+                gateways: [IPFSConfig.host(), 'https://ipfs.io'],
+            }),
+        ],
+        routers: [
+            delegatedHTTPRouting('https://delegated-ipfs.dev')
+        ]
     })
+    const fs = unixfs(helia)
+    return { fs, helia }
 }
 
 const readAsArrayBuffer = async (blob) => {
@@ -50,10 +57,10 @@ const readAsArrayBuffer = async (blob) => {
     })
 }
 
-const addAll = async (ipfs, filesToUpload) => {
+const addAll = async (fs, filesToUpload) => {
     const results = []
 
-    for await (const result of ipfs.addAll(filesToUpload, {
+    for await (const result of fs.addAll(filesToUpload, {
         wrapWithDirectory: true,
         cidVersion: 1,
         progress: uploadProgress
@@ -69,9 +76,16 @@ const sizeOf = (bytes) => {
         return "0.00 B"
     }
 
-    const e = Math.floor(Math.log(bytes) / Math.log(1024))
+    // Convert BigInt to Number for compatibility with Math.log
+    const bytesNumber = Number(bytes)
 
-    return (bytes / Math.pow(1024, e)).toFixed(2) + " " + " KMGTP".charAt(e) + "B"
+    if (isNaN(bytesNumber) || bytesNumber === Infinity) {
+        throw new Error("The value is too large to be converted to a number.")
+    }
+
+    const e = Math.floor(Math.log(bytesNumber) / Math.log(1024))
+
+    return (bytesNumber / Math.pow(1024, e)).toFixed(2) + " " + " KMGTP".charAt(e) + "B"
 }
 
 const copyUrl = async (event) => {
@@ -111,17 +125,17 @@ const setUploadStatus = (content, isError, enableUploadBtn) => {
     DOM.upload().disabled = !enableUploadBtn
 
     if (isError) {
-        DOM.uploadStatus().innerHTML = `<p class="error bg-red-muted white" role="status">An error occured: ${content}</p>`
+        DOM.uploadStatus().innerHTML = `<p class="error bg-red-muted white" role="status">An error occurred: ${content}</p>`
     } else {
         DOM.uploadStatus().innerHTML = content
     }
 }
 
-initIPFSInstance().then(ipfs => {
+initIPFSInstance().then(({ fs }) => {
     navigator.serviceWorker.register(
         new URL('../service-worker.js', import.meta.url),
         {type: 'module'}
-    );
+    ).then(r => console.log('Service Worker registered', r));
 
     DOM.accept().addEventListener("change", async (event) => {
         DOM.upload().value = ''
@@ -141,11 +155,11 @@ initIPFSInstance().then(ipfs => {
 
         // connection check
         try {
-            await ipfs.version()
+            await fetch(`${IPFSConfig.host()}/ipfs/bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/I/s/wikipedia-on-ipfs.png`, { mode: 'no-cors' })
         } catch {
             isError = true
 
-            setUploadStatus(`The IPFS node (${IPFSConfig.host()}:${IPFSConfig.port()}) is currently unreachable.<br>Please try again later (or ${IPFSConfig.useLocal() ? " <a class='white' href='?local=0'>switch to remote IPFS node</a>" : "<a class='white' href='?local=1'>switch to local IPFS node</a>"}).`, true, true)
+            setUploadStatus(`The IPFS node (${IPFSConfig.host()}) is currently unreachable.<br>Please try again later (or ${IPFSConfig.useLocal() ? " <a class='white' href='?local=0'>switch to remote IPFS node</a>" : "<a class='white' href='?local=1'>switch to local IPFS node</a>"}).`, true, true)
         }
 
         DOM.spinner().remove()
@@ -160,7 +174,7 @@ initIPFSInstance().then(ipfs => {
                 DOM.upload().files = event.clipboardData.files
 
                 if ("createEvent" in document) {
-                    var evt = document.createEvent("HTMLEvents")
+                    const evt = document.createEvent("HTMLEvents")
                     evt.initEvent("change", false, true)
                     DOM.upload().dispatchEvent(evt)
                 }
@@ -186,7 +200,7 @@ initIPFSInstance().then(ipfs => {
                 }
 
                 if (cumulativeFilesize < 1) {
-                    return setUploadStatus(`An error occured: Invalid file${selectedFiles.length > 1 ? "s" : ""} provided`, true, true)
+                    return setUploadStatus(`An error occurred: Invalid file${selectedFiles.length > 1 ? "s" : ""} provided`, true, true)
                 }
 
                 if (!IPFSConfig.useLocal() && cumulativeFilesize > 104857600) {
@@ -203,16 +217,17 @@ initIPFSInstance().then(ipfs => {
 
                         filesToUpload.push({
                             path: blob.name,
-                            content: arrayBuffer
+                            content: new Uint8Array(arrayBuffer)
                         })
                     }
 
-                    addAll(ipfs, filesToUpload).then((results) => {
+                    addAll(fs, filesToUpload).then((results) => {
                         let pathCID = ''
                         const files = []
 
+                        // Identify the root CID and files correctly
                         for (const result of results) {
-                            if (!result.path.length) {
+                            if (!result.path) {
                                 pathCID = result.cid.toString()
                             } else {
                                 files.push({
@@ -228,7 +243,7 @@ initIPFSInstance().then(ipfs => {
                         }
 
                         for (const file of files) {
-                            const downloadURL = !IPFSConfig.useLocal() ? `https://${pathCID}.${IPFSConfig.dlUrl()}/${file.name}` : `ipfs://${pathCID}/${file.name}`
+                            const downloadURL = `https://${file.cid}.${IPFSConfig.dlUrl()}`
 
                             DOM.downloadLinks().querySelector("h3:first-child").insertAdjacentHTML("afterend",
                                 `<dl class="fileInfo ba bg-near-white border-gray-muted lh-title pa3">` +
